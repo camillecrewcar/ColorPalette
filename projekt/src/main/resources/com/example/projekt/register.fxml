@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt.RegisterController">
+   <center>
+      <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="0.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="topLabel" text="zarejestruj się" />
+            <TextField fx:id="loginTextfield" promptText="Login" />
+            <PasswordField fx:id="passwordTextfield" promptText="Hasło" />
+            <PasswordField fx:id="passwordRepeatTextfield" promptText="Powtórz hasło" />
+            <TextField fx:id="countryTextfield" promptText="Kraj pochodzenia" />
+            <TextField fx:id="cityTextfield" promptText="Miasto zamieszkania" />
+            <TextField fx:id="streetNameTextfield" promptText="Ulica" />
+            <TextField fx:id="houseNumbertextField" promptText="Numer domu" />
+            <TextField fx:id="flatNumberTextField" promptText="Numer Mieszkania" />
+            <Button fx:id="submitButton" mnemonicParsing="false" onAction="#register" text="Zarejestruj" />
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#changeView" text="cofnij" BorderPane.alignment="TOP_RIGHT">
+         <BorderPane.margin>
+            <Insets right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </Button>
+   </top>
+</BorderPane>

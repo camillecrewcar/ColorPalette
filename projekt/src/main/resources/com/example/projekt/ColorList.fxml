@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt.ColorListController">
+   <top>
+      <Button fx:id="menuButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#changeView" text="menu" BorderPane.alignment="CENTER_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </Button>
+   </top>
+   <center>
+      <TableView fx:id="tab" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="96.800048828125" text="nazwa" />
+          <TableColumn fx:id="red" prefWidth="72.0" text="czerwony" />
+            <TableColumn fx:id="green" prefWidth="75.20001220703125" text="zielony" />
+            <TableColumn fx:id="blue" prefWidth="81.5999755859375" text="niebieski" />
+            <TableColumn fx:id="sample" prefWidth="150.0" text="próbka" />
+            <TableColumn fx:id="colorOwnerColunm" prefWidth="103.9998779296875" text="login wlaściciela" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

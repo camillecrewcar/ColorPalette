@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="345.0" spacing="30.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt.ColorListItemController">
+   <children>
+      <Text fx:id="name" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nazwa" textAlignment="CENTER" wrappingWidth="100.0" />
+      <Text fx:id="red" strokeType="OUTSIDE" strokeWidth="0.0" text="255" textAlignment="CENTER" wrappingWidth="20.0" />
+      <Text fx:id="green" strokeType="OUTSIDE" strokeWidth="0.0" text="255" textAlignment="CENTER" wrappingWidth="20.0" />
+      <Text fx:id="blue" strokeType="OUTSIDE" strokeWidth="0.0" text="255" textAlignment="CENTER" wrappingWidth="20.0" />
+      <Rectangle fx:id="sample" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+   </children>
+</HBox>
